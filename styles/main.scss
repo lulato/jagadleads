@@ -1,0 +1,141 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
+
+header {
+  padding: 18px;
+  display: table;
+  img {
+    width: 180px;
+    margin: 0 auto;
+  }
+}
+
+.hero {
+  font-family: "Roboto";
+  color: #fff;
+  background-color: #CFE524;
+  height: 400px;
+  text-align: center;
+  padding: 80px 20px;
+
+  h1 {
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px; // change to em 
+    line-height: 34px; // change to em
+    letter-spacing: 1px;
+  }
+  @include media($large-screen) {
+    padding: 100px 260px;
+    h1 {
+    font-size: 40px;line-height: 50px;}
+  }
+  a { color:#fff;text-decoration: none;
+    text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;}
+  .cta-button{
+    font-weight: 700;
+    border-radius: 40px;
+    background-color: #F06543;
+    padding: 12px 25px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px; // change to em
+    letter-spacing: 2.5px;
+  }
+  .learn-button{
+    text-decoration: underline;
+    /* Learn More Copy: */
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+  }
+}
+
+
+.call-box {
+  background-color: #FDFDFD;
+  color: #F06543;
+  padding: 15px;
+  text-align: center;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  h3{
+    font-family: "Roboto";
+    font-weight: 100;
+  }
+}
+
+
+.mission {
+  padding: 40px 15px;
+  text-align: center;
+  @include outer-container;
+  h2 {
+    font-family: Roboto;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    font-size: 19px;
+    color: #ACACAC;
+    letter-spacing: 0.43px;
+    line-height: 31px;
+
+  }
+  p {
+    font-family: Roboto-Regular;
+    -webkit-font-smoothing: antialiased;
+    font-size: 13px;
+    color: #565656;
+    letter-spacing: 0px;
+    line-height: 20px;
+  }
+  @include media($large-screen) {
+    @include span-columns(6);
+    @include shift(3);
+    h2 {
+      font-size: 25px; line-height: 35px;
+    }
+  }
+}
+
+
+.value-prop {
+  @include outer-container;
+  @include media($large-screen) {
+    .item {
+      @include span-columns(4);
+    }
+  }
+
+  img {width: 100%;}
+
+  h4 {
+    font-family: Roboto-Black;
+    font-size: 12px;
+    color: #F06543;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  p {
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    color: #565656;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+
+footer {
+  padding: 20px 20px 0;
+  img {
+    width: 110px;
+  }
+}
