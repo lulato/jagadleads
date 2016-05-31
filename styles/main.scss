@@ -5,6 +5,7 @@ $medium-screen: em(640) !default;
 $large-screen: em(860) !default;
 
 header {
+  @include outer-container;
   padding: 18px;
   display: table;
   img {
@@ -16,20 +17,21 @@ header {
 .hero {
   font-family: "Roboto";
   color: #fff;
-  background-color: #CFE524;
+  background-color: #24CAE5;
   height: 400px;
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 20px 0px;
 
   h1 {
     font-weight: 100;
     -webkit-font-smoothing: antialiased;
-    font-size: 24px; // change to em 
-    line-height: 34px; // change to em
+    font-size: 28px; // change to em 
+    line-height: 38px; // change to em
     letter-spacing: 1px;
   }
   @include media($large-screen) {
-    padding: 100px 260px;
+    height: 500px;
+    padding: 130px 260px;
     h1 {
     font-size: 40px;line-height: 50px;}
   }
@@ -105,10 +107,12 @@ header {
 
 
 .value-prop {
+  margin-bottom: 50px;
   @include outer-container;
   @include media($large-screen) {
     .item {
       @include span-columns(4);
+
     }
   }
 
@@ -129,12 +133,14 @@ header {
     line-height: 20px;
     text-align: center;
     padding: 0 15px;
+    margin-bottom: 35px;
   }
 }
 
 
 footer {
-  padding: 20px 20px 0;
+  @include outer-container;
+  padding: 15px 20px;
   img {
     width: 110px;
   }
