@@ -90,7 +90,7 @@ header {
     letter-spacing: 0.43px;
     line-height: 31px; }
   .mission p {
-    font-family: Roboto-Regular;
+    font-family: "Roboto";
     -webkit-font-smoothing: antialiased;
     font-size: 13px;
     color: #565656;
