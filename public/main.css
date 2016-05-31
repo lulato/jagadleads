@@ -106,8 +106,11 @@ header {
       .mission:last-child {
         margin-right: 0; }
       .mission h2 {
-        font-size: 25px;
-        line-height: 35px; } }
+        font-size: 28px;
+        line-height: 40px; }
+      .mission p {
+        font-size: 16px;
+        line-height: 24px; } }
 
 .value-prop {
   margin-bottom: 50px;
@@ -135,7 +138,7 @@ header {
     letter-spacing: 3px;
     text-align: center; }
   .value-prop p {
-    font-family: Roboto-Regular;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 13px;
     color: #565656;
     letter-spacing: 0px;
@@ -143,6 +146,11 @@ header {
     text-align: center;
     padding: 0 15px;
     margin-bottom: 35px; }
+    @media screen and (min-width: 53.75em) {
+      .value-prop p {
+        -webkit-font-smoothing: antialiased;
+        font-size: 16px;
+        line-height: 24px; } }
 
 footer {
   max-width: 68em;
